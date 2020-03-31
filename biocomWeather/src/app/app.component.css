@@ -1,0 +1,39 @@
+.col1 {
+    float: left;
+    width: 20%;
+    padding: 10px;  
+    font-size: 18px;
+    background-color: darkorange;
+    color: white;
+    margin: 45px;  
+  }
+.col2 {    
+    width: 60%;
+    padding: 10px; 
+    text-align: center;
+    font-size: 48px;   
+    color: white;
+}
+  .col3 {
+    float: right;
+    width: 20%;
+    padding: 10px; 
+    font-size: 18px;
+    background-color: darkorange;
+    color: white;
+    margin: 45px;   
+  }
+
+  .col1 .col3{
+      font-size: 18px;
+      background-color: dimgrey;
+      color: white;
+      margin: 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

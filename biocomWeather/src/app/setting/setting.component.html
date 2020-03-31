@@ -1,0 +1,28 @@
+
+<div class="main">
+    <div class="left">
+        <button mat-raised-button (click)="BackOnClick()">Back</button>
+    </div>       
+
+        <div class="container">
+        <h4 class="item">Select city</h4>
+        <mat-form-field class="item">        
+            <mat-select [(value)]="defaultSetting.CityId">
+            <mat-option *ngFor="let city of cities" [value]="city.id">
+                {{city.name}}
+            </mat-option>
+            </mat-select>
+        </mat-form-field>
+        
+        <h4 class="item">Select tempature kind</h4>
+        <mat-form-field class="item">        
+            <mat-select [(value)]="defaultSetting.KindValue"> 
+                <mat-option *ngFor="let kind of tempatureKinds" [value]="kind.id">
+                {{kind.desc}}
+                </mat-option>
+            </mat-select>
+            </mat-form-field>  
+        
+        <button class="item" style="margin: 10px; color: darkslategray;" mat-raised-button (click)="SettingChanged()">Save</button>
+    </div>
+</div>

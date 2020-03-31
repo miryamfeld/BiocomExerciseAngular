@@ -1,0 +1,20 @@
+<div  >
+   <!--style="padding: 13px;"-->
+    <mat-spinner *ngIf="!curWeather"></mat-spinner>
+
+    <div class="main-wrap">
+        <div class="left-wrap" style="vertical-align: middle;">
+            <h1 style="font-size: 72px;">{{curWeather.cityName}}</h1>
+            <p style="font-size: 64px; color: orange;">{{curWeather.tempature}} {{curWeather.tempaUnit}}</p>
+        </div>
+        <div class="right-wrap">
+            <mat-card class="weatherCard">                
+                <mat-card-content style="margin-bottom: 10px;">
+                    <img style="height:80%; width: 80%;" 
+                         src="https://openweathermap.org/img/wn/{{curWeather.iconId}}@2x.png"/>  
+                    <p style="font-size: 20px;color:white">{{curWeather.tempaDesc}}</p>  
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

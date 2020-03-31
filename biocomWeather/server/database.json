@@ -1,0 +1,16 @@
+{
+    "cities": [ 
+        {
+            "id": "281184",
+            "name": "Jerusalem"
+        },
+        {
+            "id": "293397",
+            "name" : "Tel-Aviv"
+        },
+        {
+            "id": "293703",
+            "name": "Rishon Leziyyon"
+        }
+    ]
+}
